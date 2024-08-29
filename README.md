@@ -27,11 +27,11 @@ This project is an iOS application that allows users to digitally sign PDF files
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/digital-signature-pdf.git
+   git clone https://github.com/yashsawkar/Digital_Signature.git
    ```
 2. Open the project in Xcode:
    ```bash
-   cd digital-signature-pdf
+   cd Digital_Signature
    open SignDigital.xcodeproj
    ```
 3. Install PSPDFKit via Swift Package Manager if not already included:
