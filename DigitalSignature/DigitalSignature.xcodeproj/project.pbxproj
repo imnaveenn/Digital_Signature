@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		734299072C79A4E20051CF1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734299062C79A4E20051CF1D /* AppDelegate.swift */; };
+		734299092C79A4E20051CF1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734299082C79A4E20051CF1D /* SceneDelegate.swift */; };
+		7342990B2C79A4E20051CF1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7342990A2C79A4E20051CF1D /* ViewController.swift */; };
+		7342990E2C79A4E20051CF1D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7342990D2C79A4E20051CF1D /* Base */; };
+		734299102C79A4E30051CF1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7342990F2C79A4E30051CF1D /* Assets.xcassets */; };
+		734299132C79A4E30051CF1D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 734299122C79A4E30051CF1D /* Base */; };
+		7342991E2C79A4E40051CF1D /* DigitalSignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7342991D2C79A4E40051CF1D /* DigitalSignatureTests.swift */; };
+		734299282C79A4E40051CF1D /* DigitalSignatureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734299272C79A4E40051CF1D /* DigitalSignatureUITests.swift */; };
+		7342992A2C79A4E40051CF1D /* DigitalSignatureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734299292C79A4E40051CF1D /* DigitalSignatureUITestsLaunchTests.swift */; };
+		7342993B2C79A9640051CF1D /* PSPDFKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7342993A2C79A9640051CF1D /* PSPDFKit */; };
+		734B18992C80736E004069A6 /* blank_signed.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 734B18982C80736E004069A6 /* blank_signed.pdf */; };
+		73EBA86C2C7F3EC800AF2B41 /* test-signer.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 73EBA86B2C7F3EC800AF2B41 /* test-signer.p12 */; };
+		73EBA86E2C7F3EFF00AF2B41 /* test-ca.cert in Resources */ = {isa = PBXBuildFile; fileRef = 73EBA86D2C7F3EFF00AF2B41 /* test-ca.cert */; };
+		73EBA8702C7F414B00AF2B41 /* Document.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 73EBA86F2C7F414B00AF2B41 /* Document.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7342991A2C79A4E40051CF1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 734298FB2C79A4E20051CF1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 734299022C79A4E20051CF1D;
+			remoteInfo = DigitalSignature;
+		};
+		734299242C79A4E40051CF1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 734298FB2C79A4E20051CF1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 734299022C79A4E20051CF1D;
+			remoteInfo = DigitalSignature;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		734299032C79A4E20051CF1D /* DigitalSignature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalSignature.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		734299062C79A4E20051CF1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		734299082C79A4E20051CF1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7342990A2C79A4E20051CF1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7342990D2C79A4E20051CF1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7342990F2C79A4E30051CF1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		734299122C79A4E30051CF1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		734299142C79A4E30051CF1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		734299192C79A4E40051CF1D /* DigitalSignatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitalSignatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7342991D2C79A4E40051CF1D /* DigitalSignatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalSignatureTests.swift; sourceTree = "<group>"; };
+		734299232C79A4E40051CF1D /* DigitalSignatureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitalSignatureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		734299272C79A4E40051CF1D /* DigitalSignatureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalSignatureUITests.swift; sourceTree = "<group>"; };
+		734299292C79A4E40051CF1D /* DigitalSignatureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalSignatureUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		734B18982C80736E004069A6 /* blank_signed.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = blank_signed.pdf; path = ../../blank_signed.pdf; sourceTree = "<group>"; };
+		73EBA86B2C7F3EC800AF2B41 /* test-signer.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "test-signer.p12"; path = "../../../Desktop/test-signer.p12"; sourceTree = "<group>"; };
+		73EBA86D2C7F3EFF00AF2B41 /* test-ca.cert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "test-ca.cert"; path = "../../../Desktop/test-ca.cert"; sourceTree = "<group>"; };
+		73EBA86F2C7F414B00AF2B41 /* Document.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Document.pdf; path = ../../../Desktop/Document.pdf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		734299002C79A4E20051CF1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7342993B2C79A9640051CF1D /* PSPDFKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		734299162C79A4E40051CF1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		734299202C79A4E40051CF1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		734298FA2C79A4E20051CF1D = {
+			isa = PBXGroup;
+			children = (
+				734B18982C80736E004069A6 /* blank_signed.pdf */,
+				73EBA86F2C7F414B00AF2B41 /* Document.pdf */,
+				73EBA86D2C7F3EFF00AF2B41 /* test-ca.cert */,
+				73EBA86B2C7F3EC800AF2B41 /* test-signer.p12 */,
+				734299052C79A4E20051CF1D /* DigitalSignature */,
+				7342991C2C79A4E40051CF1D /* DigitalSignatureTests */,
+				734299262C79A4E40051CF1D /* DigitalSignatureUITests */,
+				734299042C79A4E20051CF1D /* Products */,
+				734299392C79A9640051CF1D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		734299042C79A4E20051CF1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				734299032C79A4E20051CF1D /* DigitalSignature.app */,
+				734299192C79A4E40051CF1D /* DigitalSignatureTests.xctest */,
+				734299232C79A4E40051CF1D /* DigitalSignatureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		734299052C79A4E20051CF1D /* DigitalSignature */ = {
+			isa = PBXGroup;
+			children = (
+				734299062C79A4E20051CF1D /* AppDelegate.swift */,
+				734299082C79A4E20051CF1D /* SceneDelegate.swift */,
+				7342990A2C79A4E20051CF1D /* ViewController.swift */,
+				7342990C2C79A4E20051CF1D /* Main.storyboard */,
+				7342990F2C79A4E30051CF1D /* Assets.xcassets */,
+				734299112C79A4E30051CF1D /* LaunchScreen.storyboard */,
+				734299142C79A4E30051CF1D /* Info.plist */,
+			);
+			path = DigitalSignature;
+			sourceTree = "<group>";
+		};
+		7342991C2C79A4E40051CF1D /* DigitalSignatureTests */ = {
+			isa = PBXGroup;
+			children = (
+				7342991D2C79A4E40051CF1D /* DigitalSignatureTests.swift */,
+			);
+			path = DigitalSignatureTests;
+			sourceTree = "<group>";
+		};
+		734299262C79A4E40051CF1D /* DigitalSignatureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				734299272C79A4E40051CF1D /* DigitalSignatureUITests.swift */,
+				734299292C79A4E40051CF1D /* DigitalSignatureUITestsLaunchTests.swift */,
+			);
+			path = DigitalSignatureUITests;
+			sourceTree = "<group>";
+		};
+		734299392C79A9640051CF1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		734299022C79A4E20051CF1D /* DigitalSignature */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7342992D2C79A4E40051CF1D /* Build configuration list for PBXNativeTarget "DigitalSignature" */;
+			buildPhases = (
+				734298FF2C79A4E20051CF1D /* Sources */,
+				734299002C79A4E20051CF1D /* Frameworks */,
+				734299012C79A4E20051CF1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigitalSignature;
+			packageProductDependencies = (
+				7342993A2C79A9640051CF1D /* PSPDFKit */,
+			);
+			productName = DigitalSignature;
+			productReference = 734299032C79A4E20051CF1D /* DigitalSignature.app */;
+			productType = "com.apple.product-type.application";
+		};
+		734299182C79A4E40051CF1D /* DigitalSignatureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 734299302C79A4E40051CF1D /* Build configuration list for PBXNativeTarget "DigitalSignatureTests" */;
+			buildPhases = (
+				734299152C79A4E40051CF1D /* Sources */,
+				734299162C79A4E40051CF1D /* Frameworks */,
+				734299172C79A4E40051CF1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7342991B2C79A4E40051CF1D /* PBXTargetDependency */,
+			);
+			name = DigitalSignatureTests;
+			productName = DigitalSignatureTests;
+			productReference = 734299192C79A4E40051CF1D /* DigitalSignatureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		734299222C79A4E40051CF1D /* DigitalSignatureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 734299332C79A4E40051CF1D /* Build configuration list for PBXNativeTarget "DigitalSignatureUITests" */;
+			buildPhases = (
+				7342991F2C79A4E40051CF1D /* Sources */,
+				734299202C79A4E40051CF1D /* Frameworks */,
+				734299212C79A4E40051CF1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				734299252C79A4E40051CF1D /* PBXTargetDependency */,
+			);
+			name = DigitalSignatureUITests;
+			productName = DigitalSignatureUITests;
+			productReference = 734299232C79A4E40051CF1D /* DigitalSignatureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		734298FB2C79A4E20051CF1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					734299022C79A4E20051CF1D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					734299182C79A4E40051CF1D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 734299022C79A4E20051CF1D;
+					};
+					734299222C79A4E40051CF1D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 734299022C79A4E20051CF1D;
+					};
+				};
+			};
+			buildConfigurationList = 734298FE2C79A4E20051CF1D /* Build configuration list for PBXProject "DigitalSignature" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 734298FA2C79A4E20051CF1D;
+			packageReferences = (
+				734299362C79A5890051CF1D /* XCRemoteSwiftPackageReference "PSPDFKit-SP" */,
+				734B189A2C807CA3004069A6 /* XCRemoteSwiftPackageReference "keychain-pkcs11" */,
+			);
+			productRefGroup = 734299042C79A4E20051CF1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				734299022C79A4E20051CF1D /* DigitalSignature */,
+				734299182C79A4E40051CF1D /* DigitalSignatureTests */,
+				734299222C79A4E40051CF1D /* DigitalSignatureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		734299012C79A4E20051CF1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				734299102C79A4E30051CF1D /* Assets.xcassets in Resources */,
+				73EBA86C2C7F3EC800AF2B41 /* test-signer.p12 in Resources */,
+				734299132C79A4E30051CF1D /* Base in Resources */,
+				7342990E2C79A4E20051CF1D /* Base in Resources */,
+				73EBA86E2C7F3EFF00AF2B41 /* test-ca.cert in Resources */,
+				73EBA8702C7F414B00AF2B41 /* Document.pdf in Resources */,
+				734B18992C80736E004069A6 /* blank_signed.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		734299172C79A4E40051CF1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		734299212C79A4E40051CF1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		734298FF2C79A4E20051CF1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7342990B2C79A4E20051CF1D /* ViewController.swift in Sources */,
+				734299072C79A4E20051CF1D /* AppDelegate.swift in Sources */,
+				734299092C79A4E20051CF1D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		734299152C79A4E40051CF1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7342991E2C79A4E40051CF1D /* DigitalSignatureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7342991F2C79A4E40051CF1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7342992A2C79A4E40051CF1D /* DigitalSignatureUITestsLaunchTests.swift in Sources */,
+				734299282C79A4E40051CF1D /* DigitalSignatureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7342991B2C79A4E40051CF1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 734299022C79A4E20051CF1D /* DigitalSignature */;
+			targetProxy = 7342991A2C79A4E40051CF1D /* PBXContainerItemProxy */;
+		};
+		734299252C79A4E40051CF1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 734299022C79A4E20051CF1D /* DigitalSignature */;
+			targetProxy = 734299242C79A4E40051CF1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7342990C2C79A4E20051CF1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7342990D2C79A4E20051CF1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		734299112C79A4E30051CF1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				734299122C79A4E30051CF1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7342992B2C79A4E40051CF1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7342992C2C79A4E40051CF1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7342992E2C79A4E40051CF1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JA474FGKS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DigitalSignature/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.honda.DigitalSignature;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7342992F2C79A4E40051CF1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JA474FGKS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DigitalSignature/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.honda.DigitalSignature;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		734299312C79A4E40051CF1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.honda.DigitalSignatureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitalSignature.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DigitalSignature";
+			};
+			name = Debug;
+		};
+		734299322C79A4E40051CF1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.honda.DigitalSignatureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitalSignature.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DigitalSignature";
+			};
+			name = Release;
+		};
+		734299342C79A4E40051CF1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.honda.DigitalSignatureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DigitalSignature;
+			};
+			name = Debug;
+		};
+		734299352C79A4E40051CF1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.honda.DigitalSignatureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DigitalSignature;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		734298FE2C79A4E20051CF1D /* Build configuration list for PBXProject "DigitalSignature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7342992B2C79A4E40051CF1D /* Debug */,
+				7342992C2C79A4E40051CF1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7342992D2C79A4E40051CF1D /* Build configuration list for PBXNativeTarget "DigitalSignature" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7342992E2C79A4E40051CF1D /* Debug */,
+				7342992F2C79A4E40051CF1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		734299302C79A4E40051CF1D /* Build configuration list for PBXNativeTarget "DigitalSignatureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				734299312C79A4E40051CF1D /* Debug */,
+				734299322C79A4E40051CF1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		734299332C79A4E40051CF1D /* Build configuration list for PBXNativeTarget "DigitalSignatureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				734299342C79A4E40051CF1D /* Debug */,
+				734299352C79A4E40051CF1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		734299362C79A5890051CF1D /* XCRemoteSwiftPackageReference "PSPDFKit-SP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PSPDFKit/PSPDFKit-SP";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.9.0;
+			};
+		};
+		734B189A2C807CA3004069A6 /* XCRemoteSwiftPackageReference "keychain-pkcs11" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kenh/keychain-pkcs11.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7342993A2C79A9640051CF1D /* PSPDFKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 734299362C79A5890051CF1D /* XCRemoteSwiftPackageReference "PSPDFKit-SP" */;
+			productName = PSPDFKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 734298FB2C79A4E20051CF1D /* Project object */;
+}
